@@ -1,7 +1,8 @@
 object pepe {
-  var sueldo = 0
+  var bono = 0
   var property categoria = cadete
   var property tipoBonoResultado = bonoPorcentaje
+  var tipoBonoPresentismo = normal
   var faltas = 0
   method faltas(_faltas){
     faltas = _faltas
@@ -10,9 +11,9 @@ object pepe {
   method neto() = categoria.neto()
   method bonoPorPresentismo() {
     if(faltas> 0){
-      sueldo += 2000
+      bono += 2000
     }else{
-      sueldo +=  0
+      bono +=  0
     }
   }
   
